@@ -1,0 +1,6 @@
+@media (max-width:992px) {
+
+    .navbar .ending {
+        border-top: 1px solid oklch(37.3% .034 259.733);
+    }
+}

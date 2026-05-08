@@ -1,28 +1,68 @@
-*{
-      font-family: "Chakra Petch", sans-serif;
-
+* {
+  font-family: "Chakra Petch", sans-serif;
 }
-:root{
-    --main-color:#C3E920;
-    --nav-color:#0B0E13;
-    --gray-800:oklch(37.3% .034 259.733);
-}
-
-
-nav{
-    border-bottom: 1px solid var(--gray-800);
+:root {
+  --main-color: #c3e920;
+  --nav-color: #0b0e13;
+  --gray-800: oklch(37.3% 0.034 259.733);
 }
 
-.bg-nav{
-    background-color: var(--nav-color);
+nav {
+  border-bottom: 1px solid var(--gray-800);
 }
 
-.logo-color{
-    color: var(--main-color) !important;
+.bg-nav {
+  background-color: var(--nav-color);
 }
 
-.bg-buttons{
-    background-color: var(--main-color) !important;
-    
+.logo-color {
+  color: var(--main-color) !important;
 }
 
+.bg-buttons {
+  background-color: var(--main-color) !important;
+}
+
+.navbar .navbar-nav .nav-item a{
+    color: #fff ;
+  transition: color 300ms;
+}
+
+.navbar .navbar-nav .nav-item:hover a{
+  color: #c3e920 ;
+}
+
+.navbar .ending a{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.navbar .ending a:hover{
+    color: #c3e920 !important;
+}
+
+
+.navbar .btn-shine{
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar .btn-shine::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color:  rgba(255, 255, 255, 0.3);
+    z-index: 2;
+    transition: left 400ms;
+}
+
+.navbar .btn-shine:hover::before{
+    left: 100%;
+
+}
