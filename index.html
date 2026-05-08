@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <nav class="navbar border-b navbar-expand-lg bg-nav p-sm-2 p-lg-3">
-      <div class="container-lg">
+      <div class="container-xl">
         <a class="navbar-brand fw-bold logo-color" href="#">
           <i class="fa-solid fa-gamepad"></i> GameArena</a
         >
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -32,44 +33,39 @@
           <i class="fa-solid fa-bars fs-3 text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  g-4 gap-2 me-auto my-3 my-lg-0">
+          <ul class="navbar-nav g-4 gap-2 me-auto my-3 my-lg-0">
             <li class="nav-item">
               <a class="nav-link logo-color" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="#"
-                >Our Games</a
-              >
+              <a class="nav-link text-uppercase" href="#">Our Games</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">What We Do</a>
+              <a class="nav-link" href="#">What We Do</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Our Team</a>
+              <a class="nav-link" href="#">Our Team</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#">Tournaments</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
           <div
-            class="d-flex py-1 py-lg-0 flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-3"
+            class="ending d-flex py-3 py-lg-0 flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-3"
           >
-            <a
-              href=""
-              class="text-white fs-6 text-capitalize text-decoration-none"
-            >
+            <a href="">
               <i class="fa-regular fa-bell"></i>
-              <span class="d-lg-none mx-1 text-light">notification</span>
+              <span class="d-lg-none mx-1">notification</span>
             </a>
-            <a
-              href=""
-              class="text-white fs-6 text-capitalize text-decoration-none"
-            >
+            <a href="">
               <i class="fa-regular fa-message"></i>
-              <span class="d-lg-none mx-1 text-light">message</span>
+              <span class="d-lg-none mx-1">message</span>
             </a>
             <button
-              class="px-lg-4 py-2 fs-6 border-0 rounded-3 text-capitalize bg-buttons fw-bold w-100"
+              class="btn-shine px-lg-4 py-2 fs-6 border-0 rounded-3 text-capitalize bg-buttons fw-bold w-100"
             >
               sign in
             </button>
