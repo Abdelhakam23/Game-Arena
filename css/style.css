@@ -1,0 +1,28 @@
+*{
+      font-family: "Chakra Petch", sans-serif;
+
+}
+:root{
+    --main-color:#C3E920;
+    --nav-color:#0B0E13;
+    --gray-800:oklch(37.3% .034 259.733);
+}
+
+
+nav{
+    border-bottom: 1px solid var(--gray-800);
+}
+
+.bg-nav{
+    background-color: var(--nav-color);
+}
+
+.logo-color{
+    color: var(--main-color) !important;
+}
+
+.bg-buttons{
+    background-color: var(--main-color) !important;
+    
+}
+
