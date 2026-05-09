@@ -1,5 +1,6 @@
 * {
   font-family: "Chakra Petch", sans-serif;
+  scrollbar-width: none;
 }
 :root {
   --main-color: #c3e920;
