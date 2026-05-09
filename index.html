@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Games Website</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&display=swap"
       rel="stylesheet"
     />
 
@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <nav class="navbar border-b navbar-expand-lg bg-nav p-sm-2 p-lg-3">
+    <nav
+      class="navbar position-fixed w-100 border-b navbar-expand-lg bg-nav p-sm-2 p-lg-3"
+    >
       <div class="container-xl">
         <a class="navbar-brand fw-bold logo-color" href="#">
           <i class="fa-solid fa-gamepad"></i> GameArena</a
@@ -73,7 +75,43 @@
         </div>
       </div>
     </nav>
-    <header></header>
+    <header class="d-flex align-items-center">
+      <div
+        class="container d-flex flex-column gap-4 flex-lg-row align-items-center text-center text-lg-start justify-content-center"
+      >
+        <div class="right-side">
+          <span class="ultimate">THE ULTIMATE </span>
+          <br />
+          <spa class="game">GAMING</spa>
+          <br />
+          <span class="exp">EXPERIENCE </span>
+          <p class="">
+            Join millions of gamers worldwide in the most competitive eSports
+            tournaments. Experience next-level gaming with cutting-edge
+            technology and endless possibilities.
+          </p>
+          <div
+            class="btns d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-3 mt-4"
+          >
+            <button
+              class="btn-start bg-buttons rounded-2 px-4 px-sm-3 py-2 py-sm-3 text-capitalize"
+            >
+              start gaming now
+            </button>
+            <button
+              class="btn-tournament text-capitalize logo-color bg-transparent px-4 px-sm-3 py-2 py-sm-3 rounded-2"
+            >
+              watch tournaments
+            </button>
+          </div>
+        </div>
+        <div class="left-side">
+          <div class="pic">
+            <img src="images/hero-img.png" class="" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
