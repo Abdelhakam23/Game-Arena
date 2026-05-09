@@ -98,6 +98,33 @@ header .right-side .btns .btn-start {
   font-size: 12px;
   font-weight: bold;
   border: 2px solid #c3e920;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition:
+    color 400ms,
+    background-color 400ms;
+}
+
+header .right-side .btns .btn-tournament::before,
+header .right-side .btns .btn-start::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: left 400ms;
+}
+
+header .right-side .btns .btn-tournament:hover::before,
+header .right-side .btns .btn-start:hover::before {
+  left: 100%;
+}
+header .right-side .btns .btn-tournament:hover {
+  background-color: var(--main-color) !important;
+  color: #000 !important;
 }
 
 header .left-side {
@@ -129,4 +156,30 @@ header .right-side p {
   margin-top: 20px;
   line-height: 1.6;
   color: oklch(0.872 0.01 258.338);
+}
+
+header .left-side .active-players {
+  background-color: #0b0e13;
+  border: 1px solid var(--gray-800);
+  border-radius: 10px;
+  bottom: -5%;
+  left: -3%;
+  text-align: start;
+}
+
+header .left-side .active-players i {
+  color: var(--main-color);
+  font-size: 12px;
+}
+
+header .left-side .active-players .num p {
+  font-size: 10px;
+  font-weight: 400;
+  color: oklch(0.707 0.022 261.325);
+}
+
+header .left-side .active-players .num span {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(241, 241, 241);
 }
