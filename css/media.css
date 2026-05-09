@@ -26,12 +26,12 @@
   section .our-games .title span::before {
     width: 50px;
 
-    left: -90%;
+    left: -80%;
   }
 
   section .our-games .title span::after {
     width: 50px;
-    right: -90%;
+    right: -80%;
   }
   section .our-games .title h2 {
     font-size: 33.75px;
@@ -78,6 +78,7 @@ section .our-games .title {
     section .our-games .title span {
     font-size: 16px;
     margin-bottom: 20px;
+    letter-spacing: 2px;
   }
 
     section .our-games .title h2 {
