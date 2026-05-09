@@ -23,46 +23,110 @@ nav {
   background-color: var(--main-color) !important;
 }
 
-.navbar .navbar-nav .nav-item a{
-    color: #fff ;
+.navbar .navbar-nav .nav-item a {
+  color: #fff;
   transition: color 300ms;
 }
 
-.navbar .navbar-nav .nav-item:hover a{
-  color: #c3e920 ;
+.navbar .navbar-nav .nav-item:hover a {
+  color: #c3e920;
 }
 
-.navbar .ending a{
-    color: #fff;
-    font-size: 1rem;
-    text-transform: capitalize;
-    text-decoration: none;
-    transition: color 200ms;
+.navbar .ending a {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 200ms;
 }
 
-.navbar .ending a:hover{
-    color: #c3e920 !important;
+.navbar .ending a:hover {
+  color: #c3e920 !important;
 }
 
-
-.navbar .btn-shine{
-    position: relative;
-    overflow: hidden;
+.navbar .btn-shine {
+  position: relative;
+  overflow: hidden;
 }
 
-.navbar .btn-shine::before{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    background-color:  rgba(255, 255, 255, 0.3);
-    z-index: 2;
-    transition: left 400ms;
+.navbar .btn-shine::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+  transition: left 400ms;
 }
 
-.navbar .btn-shine:hover::before{
-    left: 100%;
+.navbar .btn-shine:hover::before {
+  left: 100%;
+}
+header {
+  min-height: 100vh;
+  padding-block: 100px;
+  background-image:
+    linear-gradient(#000000e0, #000000e0), url("/images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+header .right-side .ultimate,
+header .right-side .exp {
+  font-family: "Days One", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(241, 241, 241);
+}
+
+header .right-side .game {
+  font-family: "Days One", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+header .right-side .btns {
+  margin-bottom: 40px;
+}
+
+header .right-side .btns .btn-tournament,
+header .right-side .btns .btn-start {
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid #c3e920;
+}
+
+header .left-side {
+  width: 100%;
+}
+
+header .left-side .pic {
+  width: 100%;
+  padding: 4px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    oklch(79.2% 0.209 151.711)
+  );
+}
+
+header .left-side .pic img {
+  border-radius: 8px;
+  /* display:inline-block; */
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+header .right-side p {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: oklch(0.872 0.01 258.338);
 }

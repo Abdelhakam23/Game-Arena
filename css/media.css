@@ -1,6 +1,126 @@
-@media (max-width:992px) {
+@media (min-width: 1200px) {
+  header .right-side p {
+    width: 85%;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  header .right-side .ultimate,
+  header .right-side .exp {
+    font-size: 60px;
+    line-height: 1.2;
+  }
 
-    .navbar .ending {
-        border-top: 1px solid oklch(37.3% .034 259.733);
-    }
+  header .right-side .game {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  header .left-side .pic {
+    width: 600px;
+  }
+
+  header .left-side .pic img {
+    height: 400px;
+  }
+  header .right-side .btns .btn-tournament,
+  header .right-side .btns .btn-start {
+    font-size: 16px;
+  }
+  header .left-side .pic {
+    width: 600px;
+  }
+
+  header .left-side .pic img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .right-side p {
+    width: 85%;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  header .right-side .ultimate,
+  header .right-side .exp {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  header .right-side .game {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  header .left-side .pic img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+  }
+  header .right-side .btns .btn-tournament,
+  header .right-side .btns .btn-start {
+    font-size: 16px;
+  }
+  header .left-side .pic {
+    width: 450px;
+  }
+
+  header .left-side .pic img {
+    height: 380px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .ending {
+    border-top: 1px solid oklch(37.3% 0.034 259.733);
+  }
+
+  header .right-side p {
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+    font-size: 16px;
+  }
+  header .right-side .ultimate,
+  header .right-side .exp {
+    font-size: 48px;
+  }
+
+  header .right-side .game {
+    font-size: 48px;
+  }
+  header .left-side .pic {
+    width: 600px;
+    margin-inline: auto;
+  }
+
+  header .left-side .pic img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .right-side .btns .btn-tournament,
+  header .right-side .btns .btn-start {
+    font-size: 15px;
+  }
+  header .right-side p {
+    font-size: 15px;
+  }
+  header .right-side .ultimate,
+  header .right-side .exp {
+    font-size: 45px;
+  }
+
+  header .right-side .game {
+    font-size: 45px;
+  }
+
+  header .left-side .pic {
+    width: 100%;
+  }
+
+  header .left-side .pic img {
+    height: 250px;
+  }
 }
