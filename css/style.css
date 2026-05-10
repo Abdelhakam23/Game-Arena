@@ -193,10 +193,10 @@ section .our-games {
   padding: 40px 20px;
   background-color: #0b0e13;
 }
-section  .title {
+section .title {
   margin-bottom: 30px;
 }
-section  .title .sec-name {
+section .title .sec-name {
   font-size: 12.25px;
   font-weight: 700;
   line-height: 17.5px;
@@ -207,7 +207,7 @@ section  .title .sec-name {
   position: relative;
 }
 
-section  .title .sec-name::before {
+section .title .sec-name::before {
   content: "";
   height: 3px;
   width: 30px;
@@ -224,7 +224,7 @@ section  .title .sec-name::before {
   transform: translateY(-50%);
 }
 
-section  .title .sec-name::after {
+section .title .sec-name::after {
   content: "";
   height: 3px;
   width: 30px;
@@ -309,21 +309,20 @@ section .our-games .slider .carousel-inner .item::after {
   /* background-color: #C3E920; */
 }
 
-section .our-games .slider .carousel-inner .item:hover::after{
-    opacity: 1;
+section .our-games .slider .carousel-inner .item:hover::after {
+  opacity: 1;
 }
 
-section .our-games .slider .carousel-inner .item:hover .title-game{
-    bottom: 6%;
+section .our-games .slider .carousel-inner .item:hover .title-game {
+  bottom: 6%;
 }
-section .our-games .slider .carousel-inner .item:hover img{
-    scale: 1.1;
-}
-
-section .our-games .slider .carousel-inner .item:hover .genre{
-    top: 4%;
+section .our-games .slider .carousel-inner .item:hover img {
+  scale: 1.1;
 }
 
+section .our-games .slider .carousel-inner .item:hover .genre {
+  top: 4%;
+}
 
 section .our-games .slider .change {
   margin-top: 25px;
@@ -367,107 +366,125 @@ section .our-games .slider .view-all:hover {
   color: #000;
 }
 
-
-section .our-games .slider .controllers{
-    margin-top: 40px;
+section .our-games .slider .controllers {
+  margin-top: 40px;
 }
 
-section .what-we-do{
-    padding: 40px 20px;
-    background-color: #0b0e13;
+section .what-we-do {
+  padding: 40px 20px;
+  background-color: #0b0e13;
 }
 
-
-
-section .what-we-do .title h2{
-    font-family: "Days One", sans-serif;
-font-size: 1.3125rem;
-font-weight: 700;
-line-height: 28px;
-color: rgb(241, 241, 241);
+section .what-we-do .title h2 {
+  font-family: "Days One", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(241, 241, 241);
 }
 
-section .what-we-do .title p{
-font-size: 1.3125rem;
-font-weight: 700;
-line-height: 28px;
-color: rgb(241, 241, 241);
-text-transform: capitalize;
+section .what-we-do .title p {
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(241, 241, 241);
+  text-transform: capitalize;
 }
 
-section .what-we-do .title p span{
-    color: var(--main-color);
+section .what-we-do .title p span {
+  color: var(--main-color);
 }
 section .what-we-do .item {
-    position: relative;
-    /* padding: 10px; */
-    /* height: auto; */
-    aspect-ratio: 1/1;
-    background-color: #1A1A1A;
-    color: #fff;
-    border: 1px solid #1e2939 !important;
-    overflow: hidden;
-    transition: border 400ms;
+  position: relative;
+  /* padding: 10px; */
+  /* height: auto; */
+  aspect-ratio: 1/1;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #1e2939 !important;
+  overflow: hidden;
+  transition: border 400ms;
 }
 
-section .what-we-do .item:hover{
-    border: 1px solid var(--main-color) !important; 
+section .what-we-do .item:hover {
+  border: 1px solid var(--main-color) !important;
 }
-section .what-we-do .item::after{
-    content: "";
-    border-top: 24px solid var(--main-color);
-    border-right: 24px solid transparent;
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    transition: top 400ms , left 400ms;
-
+section .what-we-do .item::after {
+  content: "";
+  border-top: 24px solid var(--main-color);
+  border-right: 24px solid transparent;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  transition:
+    top 400ms,
+    left 400ms;
 }
-section .what-we-do .item::before{
-    content: "";
-    border-top: 24px solid transparent;
-    border-right: 24px solid var(--main-color);
-    position: absolute;
-    bottom: -100%;
-    right: -100%;
-    transition: bottom 400ms , right 400ms;
-
-}
-
-section .what-we-do .item:hover::after{
-    top: 5%;
-    left: 5%;
-}
-section .what-we-do .item:hover::before{
-    bottom: 5%;
-    right: 5%;
+section .what-we-do .item::before {
+  content: "";
+  border-top: 24px solid transparent;
+  border-right: 24px solid var(--main-color);
+  position: absolute;
+  bottom: -100%;
+  right: -100%;
+  transition:
+    bottom 400ms,
+    right 400ms;
 }
 
-section .what-we-do .item:hover .content .icon{
-    background-color: var(--main-color);
-    color: #000;
+section .what-we-do .item:hover::after {
+  top: 5%;
+  left: 5%;
+}
+section .what-we-do .item:hover::before {
+  bottom: 5%;
+  right: 5%;
 }
 
-
-section .what-we-do .item .content .icon{
-    background-color: #1e2939;
-    width: fit-content;
-    padding: 12px;
-    border-radius: 5px;
-    color: var(--main-color);
-    transition: background-color 400ms , color 400ms;
-    margin-bottom: 5px;
+section .what-we-do .item:hover .content .icon {
+  background-color: var(--main-color);
+  color: #000;
 }
 
-section .what-we-do .item .content .icon i{
-    font-size: 18px;
-   
+section .what-we-do .item .content .icon {
+  background-color: #1e2939;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 5px;
+  color: var(--main-color);
+  transition:
+    background-color 400ms,
+    color 400ms;
+  margin-bottom: 5px;
 }
 
-section .what-we-do .item .content h3{
-    font-family: "Days One", sans-serif;
-font-size: .9844rem;
-font-weight: 700;
-line-height: 19.6875px;
-color: rgb(241, 241, 241);
+section .what-we-do .item .content .icon i {
+  font-size: 18px;
+}
+
+section .what-we-do .item .content h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 0.9844rem;
+  font-weight: 700;
+  line-height: 19.6875px;
+  color: rgb(241, 241, 241);
+}
+
+.section-separator::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  max-width: 600px;
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    #cbfe1c 20%,
+    #cbfe1c #cbfe1c 80%,
+    transparent
+  );
+  box-shadow: 0 0 10px #cbfe1c, 0 0 20px #cbfe1c4d;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }
