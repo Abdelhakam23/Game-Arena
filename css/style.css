@@ -544,6 +544,97 @@ section .content img {
   object-fit: cover;
 }
 
+section .our-team {
+  background-color: #0b0e13;
+}
+
+section .our-team .title h2 {
+  font-family: "Days One", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  color: rgb(241, 241, 241);
+}
+
+section .our-team .title p {
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 24.5px;
+  color: oklch(0.707 0.022 261.325);
+}
+
+section .our-team .teams .card-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+section .our-team .teams .card-item::after {
+  content: "";
+  /* height: 100%;
+  width: 105%; */
+  backdrop-filter: grayscale();
+  position: absolute;
+  left:-1px ;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
+  z-index: 2;
+  transform: translateY(0);
+  transition: transform 1s;
+  
+}
+section .our-team .teams .card-item:hover::after {
+  transform: translateY(-100%);
+}
+section .our-team .teams .card-item img {
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  
+}
+
+section .our-team .teams .card-item .info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+section .our-team .teams .card-item .info .member-info h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 24.5px;
+  color: rgb(255, 255, 255);
+}
+
+section .our-team .teams .card-item .info .member-info .pro {
+  font-size: 12.25px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: rgb(203, 254, 28);
+}
+section .our-team .teams .card-item .info .member-info .champ {
+  font-size: 10.5px;
+  font-weight: 400;
+  line-height: 14px;
+  color: oklch(0.707 0.022 261.325);
+}
+
+section .our-team .teams .card-item .info .rate {
+  font-size: 15.75px;
+  font-weight: 700;
+  line-height: 24.5px;
+  color: rgb(203, 254, 28);
+  /* position: absolute;
+  right: 30px;
+  bottom: 0px; */
+  rotate: 90deg;
+  /* transform-origin: bottom left; */
+}
+
 @keyframes scroll-left {
   from {
     transform: translateX(0);
