@@ -18,18 +18,18 @@
   section .our-games .slider .change {
     margin-top: 0;
   }
-  section  .title .sec-name {
+  section .title .sec-name {
     font-size: 13.125px;
     margin-bottom: 20px;
   }
 
-  section  .title .sec-name::before {
+  section .title .sec-name::before {
     width: 50px;
 
     left: -80%;
   }
 
-  section  .title .sec-name::after {
+  section .title .sec-name::after {
     width: 50px;
     right: -80%;
   }
@@ -37,22 +37,19 @@
     font-size: 33.75px;
   }
   section .our-games .slider .carousel-inner img {
-  height: auto;
+    height: auto;
+  }
+  section .our-games .title {
+    margin-bottom: 50px;
+  }
 
-}
-section .our-games .title {
-  margin-bottom: 50px;
-}
+  section .what-we-do .title h2 {
+    font-size: 28.125px;
+  }
 
-section .what-we-do .title h2{
-font-size: 28.125px;
-
-}
-
-section .what-we-do .title p{
-font-size: 28.125px;
-
-}
+  section .what-we-do .title p {
+    font-size: 28.125px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -85,48 +82,49 @@ font-size: 28.125px;
   header .left-side .active-players .num span {
     font-size: 15px;
   }
-    section  .title .sec-name {
+  section .title .sec-name {
     font-size: 16px;
     margin-bottom: 20px;
     letter-spacing: 2px;
   }
 
-    section .our-games .title h2 {
+  section .our-games .title h2 {
     font-size: 48px;
     margin-bottom: 20px;
   }
   section .our-games .slider .carousel-inner img {
-  height: auto;
-
-}
+    height: auto;
+  }
   section .our-games .slider .view-all {
     padding: 15px 20px;
     font-size: 18px;
   }
-  section .what-we-do .title h2{
-font-size: 33.75px;
+  section .what-we-do .title h2 {
+    font-size: 33.75px;
+  }
 
-}
-
-section .what-we-do .title p{
-font-size: 33.75px;
-
-}
-section .what-we-do .item .content .icon{
-   
+  section .what-we-do .title p {
+    font-size: 33.75px;
+  }
+  section .what-we-do .item .content .icon {
     padding: 20px;
-}
+  }
 
-section .what-we-do .item .content .icon i{
+  section .what-we-do .item .content .icon i {
     font-size: 24px;
-   
-}
+  }
 
-section .what-we-do .item .content h3{
+  section .what-we-do .item .content h3 {
     font-family: "Days One", sans-serif;
-font-size: 20px;
-
-}
+    font-size: 20px;
+  }
+  section .content .sponsers {
+    background-image: radial-gradient(
+      ellipse at center,
+      #d4ff12 0%,
+      transparent 60%
+    );
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -151,15 +149,13 @@ font-size: 20px;
   header .left-side .pic img {
     height: 350px;
   }
-    section .what-we-do .title h2{
-font-size: 36px;
+  section .what-we-do .title h2 {
+    font-size: 36px;
+  }
 
-}
-
-section .what-we-do .title p{
-font-size: 36px;
-
-}
+  section .what-we-do .title p {
+    font-size: 36px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -194,16 +190,23 @@ font-size: 36px;
     font-size: 20px;
     font-weight: 700;
   }
-    section .our-games .slider .view-all {
+  section .our-games .slider .view-all {
     padding: 20px 25px;
   }
-      section .what-we-do .title h2{
-font-size: 48px;
+  section .what-we-do .title h2 {
+    font-size: 48px;
+  }
 
-}
+  section .what-we-do .title p {
+    font-size: 48px;
+  }
+  section .content .sponsers {
+    height: 400px;
 
-section .what-we-do .title p{
-font-size: 48px;
-
-}
+    background-image: radial-gradient(
+      ellipse at center,
+      #d4ff12 0%,
+      transparent 40%
+    );
+  }
 }
