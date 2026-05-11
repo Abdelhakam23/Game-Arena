@@ -197,7 +197,7 @@ section .title {
   margin-bottom: 30px;
 }
 section .title .sec-name {
-  font-size: 12.25px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 17.5px;
   color: rgb(203, 254, 28);
@@ -537,15 +537,34 @@ section .content .logos-content-right {
   animation: scroll-right 60s linear infinite;
 }
 
-section .content img {
+section .content .logos img {
   width: 80px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 section .our-team {
   background-color: #0b0e13;
+  padding-block: 60px;
 }
 
 section .our-team .title h2 {
@@ -577,14 +596,13 @@ section .our-team .teams .card-item::after {
   width: 105%; */
   backdrop-filter: grayscale();
   position: absolute;
-  left:-1px ;
+  left: -1px;
   right: -1px;
   top: -1px;
   bottom: -1px;
   z-index: 2;
   transform: translateY(0);
   transition: transform 1s;
-  
 }
 section .our-team .teams .card-item:hover::after {
   transform: translateY(-100%);
@@ -593,7 +611,6 @@ section .our-team .teams .card-item img {
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
-  
 }
 
 section .our-team .teams .card-item .info {
@@ -635,20 +652,201 @@ section .our-team .teams .card-item .info .rate {
   /* transform-origin: bottom left; */
 }
 
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+#contact-us {
+  background-color: #0e131e;
 }
 
-@keyframes scroll-right {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
+section .contact-us {
+  padding: 50px 15px;
+}
+
+section .contact-us .title h2 {
+  font-family: "Days One", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  color: rgb(241, 241, 241);
+}
+
+section .contact-us .title p {
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 24.5px;
+  color: oklch(0.707 0.022 261.325);
+}
+
+section .contact-us .community-info .location,
+section .contact-us .community-info .phone,
+section .contact-us .community-info .email {
+  background-color: #1e2939;
+  border-radius: 10px;
+  padding: 30px 20px;
+  height: 130px;
+}
+
+section .contact-us .community-info .map {
+  background-color: #c3e920;
+  color: #000;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+section .contact-us .community-info h3 {
+  text-transform: capitalize;
+  font-family: "Days One", sans-serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 24.5px;
+  color: rgb(241, 241, 241);
+}
+
+section .contact-us .community-info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: oklch(0.707 0.022 261.325);
+}
+
+section .contact-us .community-info .join {
+  padding: 30px 20px;
+  border-radius: 12px;
+  height: 190px;
+  background-image: linear-gradient(to right, #c0e825, #7fe472);
+}
+
+section .contact-us .community-info .join .join-comm {
+  font-family: "Days One", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(11, 14, 19);
+}
+
+section .contact-us .community-info .join .contact-ways {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgb(11, 14, 19);
+}
+
+section .contact-us .community-info .join .social-links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #0b0e13;
+  color: var(--main-color);
+}
+
+section .contact-us .community-info .join .social-links a {
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+section .contact-us .send-message {
+  background-color: #1e2939;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+section .contact-us .send-message h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(241, 241, 241);
+}
+
+section .contact-us .send-message label {
+  font-size: 12.25px;
+  font-weight: 700;
+  line-height: 17.5px;
+  color: oklch(0.872 0.01 258.338);
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+section .contact-us .send-message input,
+section .contact-us .send-message select,
+section .contact-us .send-message textarea {
+  background-color: #364152;
+  padding: 10px;
+  border: 1px solid #4a5565;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+section .contact-us .send-message input::placeholder,
+section .contact-us .send-message textarea::placeholder {
+  color: #90959f;
+}
+
+section .contact-us .send-message input:focus,
+section .contact-us .send-message select:focus,
+section .contact-us .send-message textarea:focus {
+  border: 1px solid var(--main-color) !important;
+}
+
+section .contact-us .send-message textarea {
+  height: 150px;
+  resize: none;
+}
+
+section .contact-us .send-message .check {
+  font-size: 12.25px;
+  font-weight: 400;
+  /* line-height: 17.5px; */
+  color: oklch(0.707 0.022 261.325);
+}
+
+section .contact-us .send-message button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  font-size: 15.75px;
+  font-weight: 700;
+  line-height: 24.5px;
+  color: rgb(11, 14, 19);
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+section .contact-us .send-message button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: left 400ms;
+}
+
+section .contact-us .send-message button:hover::before {
+  left: 100%;
+}
+
+section .contact-us .send-message .support {
+  border-top: 1px solid #4a5565;
+  margin-top: 15px;
+}
+
+section .contact-us .send-message .support span {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(203, 254, 28);
+}
+
+section .contact-us .send-message .support p {
+  font-size: 12.25px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: oklch(0.707 0.022 261.325);
 }
