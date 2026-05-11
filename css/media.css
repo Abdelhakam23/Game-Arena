@@ -50,6 +50,19 @@
   section .what-we-do .title p {
     font-size: 28.125px;
   }
+  section .our-team .teams .card-item .info .member-info h3 {
+  font-size: 20px;
+
+}
+
+section .our-team .teams .card-item .info .member-info .pro {
+  font-size: 14px;
+
+}
+section .our-team .teams .card-item .info .member-info .champ {
+  font-size: 12px;
+
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -209,4 +222,6 @@
       transparent 40%
     );
   }
+
+
 }
