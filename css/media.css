@@ -1,0 +1,272 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  header .right-side .btns .btn-tournament,
+  header .right-side .btns .btn-start {
+    width: fit-content;
+    font-size: 15px;
+  }
+
+  header .right-side p {
+    width: 70%;
+    margin-inline: auto;
+  }
+  section .our-games .slider .view-all {
+    padding: 15px 10px;
+    font-size: 15px;
+    width: fit-content;
+  }
+  section .our-games .slider .change {
+    margin-top: 0;
+  }
+
+  section .title .sec-name::before {
+    width: 50px;
+
+    left: -80%;
+  }
+
+  section .title .sec-name::after {
+    width: 50px;
+    right: -80%;
+  }
+  section .our-games .title h2 {
+    font-size: 33.75px;
+  }
+  section .our-games .slider .carousel-inner img {
+    height: auto;
+  }
+  section .our-games .title {
+    margin-bottom: 50px;
+  }
+
+  section .what-we-do .title h2 {
+    font-size: 28.125px;
+  }
+
+  section .what-we-do .title p {
+    font-size: 28.125px;
+  }
+  section .our-team .teams .card-item .info .member-info h3 {
+    font-size: 20px;
+  }
+
+  section .our-team .teams .card-item .info .member-info .pro {
+    font-size: 14px;
+  }
+  section .our-team .teams .card-item .info .member-info .champ {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header .right-side .ultimate,
+  header .right-side .exp,
+  header .right-side .game {
+    font-size: 45px;
+  }
+
+  header .right-side p {
+    font-size: 16px;
+    width: 62%;
+  }
+  header .right-side .btns .btn-tournament,
+  header .right-side .btns .btn-start {
+    width: fit-content;
+    font-size: 16px;
+  }
+
+  header .left-side .pic img {
+    height: 300px;
+  }
+
+  header .left-side .active-players {
+    bottom: -5%;
+    left: -2%;
+  }
+
+  header .left-side .active-players .num span {
+    font-size: 15px;
+  }
+  section .title .sec-name {
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  section .our-games .title h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  section .our-games .slider .carousel-inner img {
+    height: auto;
+  }
+  section .our-games .slider .view-all {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  section .what-we-do .title h2 {
+    font-size: 33.75px;
+  }
+
+  section .what-we-do .title p {
+    font-size: 33.75px;
+  }
+  section .what-we-do .item .content .icon {
+    padding: 20px;
+  }
+
+  section .what-we-do .item .content .icon i {
+    font-size: 24px;
+  }
+
+  section .what-we-do .item .content h3 {
+    font-family: "Days One", sans-serif;
+    font-size: 20px;
+  }
+  section .content .sponsers {
+    background-image: radial-gradient(
+      ellipse at center,
+      #d4ff12 0%,
+      transparent 60%
+    );
+  }
+  
+
+footer {
+  padding-block: 30px;
+}
+footer .footer-content .footer-logo p {
+  font-size: 16px;;
+}
+footer .footer-content .footer-logo a {
+
+  padding:0;
+  font-size: 20px;
+  
+}
+
+footer .footer-content .footer-games h4 {
+  font-size: 20px;
+
+}
+footer .footer-content .footer-games a {
+  font-size: 16px;
+}
+footer .footer-content .bottom-footer .rights,
+footer .footer-content .bottom-footer a {
+  font-size: 16px;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header .right-side .ultimate,
+  header .right-side .exp,
+  header .right-side .game {
+    font-size: 48px;
+  }
+
+  header .right-side p {
+    width: 96%;
+    text-align: start;
+    margin-inline: 0;
+  }
+
+  header .left-side .pic {
+    width: 100%;
+    /* margin-inline: auto; */
+  }
+
+  header .left-side .pic img {
+    height: 350px;
+  }
+  section .what-we-do .title h2 {
+    font-size: 36px;
+  }
+
+  section .what-we-do .title p {
+    font-size: 36px;
+  }
+  section .contact-us .send-message h3 {
+    font-size: 24px;
+  }
+
+  section .contact-us .send-message label {
+    font-size: 14px;
+  }
+  section .contact-us .community-info .join .join-comm {
+    font-size: 24px;
+  }
+
+  section .contact-us .community-info .join .contact-ways {
+    font-size: 16px;
+  }
+  section .contact-us .community-info h3 {
+    font-size: 20px;
+  }
+
+  section .contact-us .community-info p {
+    font-size: 16px;
+  }
+  footer {
+  padding-block:50px;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header .right-side .ultimate,
+  header .right-side .exp,
+  header .right-side .game {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  header .right-side p {
+    width: 80%;
+  }
+
+  header .left-side .pic {
+    width: 100%;
+  }
+
+  header .left-side .pic img {
+    height: 400px;
+  }
+
+  header .left-side .active-players {
+    left: -5%;
+  }
+
+  header .left-side .active-players i {
+    font-size: 20px;
+  }
+
+  header .left-side .active-players .num span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  section .our-games .slider .view-all {
+    padding: 20px 25px;
+  }
+  section .what-we-do .title h2 {
+    font-size: 48px;
+  }
+
+  section .what-we-do .title p {
+    font-size: 48px;
+  }
+  section .content .sponsers {
+    height: 400px;
+
+    background-image: radial-gradient(
+      ellipse at center,
+      #d4ff12 0%,
+      transparent 40%
+    );
+  }
+    footer {
+  padding-block:80px;
+}
+}
