@@ -709,9 +709,9 @@ section .contact-us .community-info p {
 }
 
 section .contact-us .community-info .join {
-  padding: 30px 20px;
+  padding:  20px;
   border-radius: 12px;
-  height: 190px;
+  /* height: fit-content; */
   background-image: linear-gradient(to right, #c0e825, #7fe472);
 }
 
@@ -729,6 +729,7 @@ section .contact-us .community-info .join .contact-ways {
   line-height: 21px;
   color: rgb(11, 14, 19);
 }
+
 
 section .contact-us .community-info .join .social-links ul li {
   display: flex;
@@ -849,4 +850,76 @@ section .contact-us .send-message .support p {
   font-weight: 400;
   line-height: 17.5px;
   color: oklch(0.707 0.022 261.325);
+  white-space: nowrap;
 }
+
+footer {
+  background-color: #000;
+  padding: 25px 10px;
+}
+
+footer .footer-content .footer-logo p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: oklch(0.707 0.022 261.325);
+}
+
+footer .footer-content .footer-logo a {
+  color: oklch(0.707 0.022 261.325);
+  transition: color 300ms;
+  padding: 5px;
+  
+}
+
+
+footer .footer-content .footer-logo a:hover {
+  color: var(--main-color);
+}
+
+footer .footer-content .footer-games h4 {
+  text-transform: capitalize;
+  font-family: "Days One", sans-serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 24.5px;
+  color: rgb(241, 241, 241);
+  margin-bottom: 20px;
+}
+
+footer .footer-content .footer-games a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: oklch(0.707 0.022 261.325);
+  transition: color 300ms;
+}
+
+footer .footer-content .footer-games a:hover {
+  color: var(--main-color);
+}
+
+footer .footer-content .bottom-footer {
+  border-top: 1px solid #4a5565;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer .footer-content .bottom-footer .rights,
+footer .footer-content .bottom-footer a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: oklch(0.707 0.022 261.325);
+}
+
+footer .footer-content .bottom-footer a {
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+footer .footer-content .bottom-footer a:hover {
+  color: var(--main-color);
+}
+

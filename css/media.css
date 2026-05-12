@@ -131,6 +131,33 @@
       transparent 60%
     );
   }
+  
+
+footer {
+  padding-block: 30px;
+}
+footer .footer-content .footer-logo p {
+  font-size: 16px;;
+}
+footer .footer-content .footer-logo a {
+
+  padding:0;
+  font-size: 20px;
+  
+}
+
+footer .footer-content .footer-games h4 {
+  font-size: 20px;
+
+}
+footer .footer-content .footer-games a {
+  font-size: 16px;
+}
+footer .footer-content .bottom-footer .rights,
+footer .footer-content .bottom-footer a {
+  font-size: 16px;
+}
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -183,6 +210,9 @@
   section .contact-us .community-info p {
     font-size: 16px;
   }
+  footer {
+  padding-block:50px;
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -236,4 +266,7 @@
       transparent 40%
     );
   }
+    footer {
+  padding-block:80px;
+}
 }
