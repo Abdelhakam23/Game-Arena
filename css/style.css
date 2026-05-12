@@ -709,9 +709,9 @@ section .contact-us .community-info p {
 }
 
 section .contact-us .community-info .join {
-  padding: 30px 20px;
+  padding:  20px;
   border-radius: 12px;
-  height: 190px;
+  /* height: fit-content; */
   background-image: linear-gradient(to right, #c0e825, #7fe472);
 }
 
@@ -729,6 +729,7 @@ section .contact-us .community-info .join .contact-ways {
   line-height: 21px;
   color: rgb(11, 14, 19);
 }
+
 
 section .contact-us .community-info .join .social-links ul li {
   display: flex;
@@ -849,6 +850,7 @@ section .contact-us .send-message .support p {
   font-weight: 400;
   line-height: 17.5px;
   color: oklch(0.707 0.022 261.325);
+  white-space: nowrap;
 }
 
 footer {
