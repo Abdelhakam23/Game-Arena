@@ -87,7 +87,7 @@ No build tools or dependencies needed. Just open and run.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/game-arena.git
+git clone https://github.com/Abdelhakam23/game-arena.git
 cd game-arena
 ```
 
