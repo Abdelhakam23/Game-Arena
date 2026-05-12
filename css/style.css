@@ -783,6 +783,7 @@ section .contact-us .send-message textarea {
 section .contact-us .send-message input::placeholder,
 section .contact-us .send-message textarea::placeholder {
   color: #90959f;
+  text-transform: capitalize;
 }
 
 section .contact-us .send-message input:focus,
